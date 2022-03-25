@@ -1,4 +1,4 @@
-package com.meow;
+package com.meow.customer;
 
 public class Sale {
     public static void main(String[] args) {

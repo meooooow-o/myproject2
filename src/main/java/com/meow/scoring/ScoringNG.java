@@ -1,6 +1,4 @@
-package com.meow;
-
-import java.sql.SQLOutput;
+package com.meow.scoring;
 
 public class ScoringNG {
     public static void main(String[] args) {

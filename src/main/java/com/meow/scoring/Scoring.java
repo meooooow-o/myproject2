@@ -1,4 +1,4 @@
-package com.meow;
+package com.meow.scoring;
 
 public class Scoring {
     public static void main(String[] args) {

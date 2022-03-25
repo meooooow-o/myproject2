@@ -1,4 +1,4 @@
-package com.meow;
+package com.meow.customer;
 
 public class Customer {
     String name;

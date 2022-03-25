@@ -1,6 +1,6 @@
-package com.meow;
+package com.meow.customer;
 
-public class Vvip extends Vip{
+public class Vvip extends Vip {
     public Vvip(String name,int spend){
         super(name, spend);
     }
