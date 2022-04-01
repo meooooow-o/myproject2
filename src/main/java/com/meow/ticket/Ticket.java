@@ -1,43 +1,33 @@
 package com.meow.ticket;
 
 public class Ticket {
-    Station startPlace;
-    Station destinationPlace;
+//    public static final int TAIPEI_STATION = 100;
+//    public static final int TAICHUNG_STATION = 200;
+//    public static final int KAOHSIUNG_STATION = 300;
+
+    Station start;
+    Station destination;
     int price;
 
-    public Ticket(Station startPlace, Station destinationPlace){
-        this.startPlace = startPlace;
-        this.destinationPlace = destinationPlace;
+    public Ticket(Station start, Station destination) {
+        this.start = start;
+        this.destination = destination;
+        int diff = Math.abs(start.id - destination.id);
+        System.out.println("diff: " + diff);
+        switch (diff) {
+            case 100:
+                price = 500;
+                break;
+            case 200:
+                price = 600;
+                break;
+            case 300:
+                price = 1100;
+                break;
+        }
     }
 
-    public int getPrice(){
-        price = 0;
-        if (startPlace == Station.TAIPEI_STATION){
-            if (destinationPlace == Station.TAICHUNG_STATION)
-                price = 600;
-            else
-                price = 1500;
-        }
-        if (startPlace == Station.TAICHUNG_STATION){
-            if (destinationPlace == Station.TAIPEI_STATION)
-                price = 600;
-            else
-                price = 900;
-        }
-        if (startPlace == Station.KAOHSIUNG_STATION){
-            if (destinationPlace == Station.TAIPEI_STATION)
-                price = 1500;
-            else
-                price = 900;
-        }
-        return price;
-    }
-
-    public void print(){
-        price = getPrice();
-        System.out.println("您的起站: " + startPlace.name +
-                "\t" + "您的迄站: " + destinationPlace.name +
-                "\t" + "票價: " + price);
-
+    public void print() {
+        System.out.println(start.name + "\t" + destination.name + "\t" + price);
     }
 }

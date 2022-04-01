@@ -1,6 +1,6 @@
 package com.meow.scoring;
 
-public class Student {
+public class Student implements Printable {
     String name;
     int english;
     int math;
@@ -21,8 +21,8 @@ public class Student {
         english = -1;
         math = -1;*/
 
-    //建構void print
-    public void print(){
+    @Override
+    public void print() {
         int average = getAverage() ;
         System.out.print(name + "\t" + english + "\t" + math + "\t" + average);
 
@@ -30,6 +30,15 @@ public class Student {
             System.out.print("*");
         System.out.println();
     }
+    //    //建構void print
+//    public void print(){
+//        int average = getAverage() ;
+//        System.out.print(name + "\t" + english + "\t" + math + "\t" + average);
+//
+//        if (average<60)
+//            System.out.print("*");
+//        System.out.println();
+//    }
     public int getAverage(){
         return (english + math)/2;
     }
