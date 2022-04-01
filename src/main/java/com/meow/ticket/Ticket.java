@@ -35,8 +35,8 @@ public class Ticket {
 
     public void print(){
         price = getPrice();
-        System.out.println("您的起站: " + startPlace +
-                "\t" + "您的迄站: " + destinationPlace +
+        System.out.println("您的起站: " + startPlace.name +
+                "\t" + "您的迄站: " + destinationPlace.name +
                 "\t" + "票價: " + price);
 
     }
