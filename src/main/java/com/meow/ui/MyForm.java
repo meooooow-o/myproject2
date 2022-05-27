@@ -8,3 +8,6 @@ public class MyForm {
     private JTextField textField;
     private JCheckBox checkBox;
 }
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
