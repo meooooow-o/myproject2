@@ -26,7 +26,7 @@ public class GuessFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        GuessFrame guessFrame = new GuessFrame();
+        GuessFrame guessFrame = new GuessFrame()
     }
 
 }
