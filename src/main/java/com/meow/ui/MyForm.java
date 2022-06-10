@@ -5,15 +5,6 @@ import javax.swing.*;
 public class MyForm {
     private JButton helloButton;
     private JPanel panel1;
-    private JTextPane textPane1;
-    private JComboBox comboBox1;
-    private JTextField textField;
-    private JCheckBox checkBox;
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
+    private JTextField textField1;
+    private JCheckBox checkBox1;
 }
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
